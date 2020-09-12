@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(#000, #333);
+  color: #fff;
+  line-height: 1.5;
+  height: 100vh;
+}
+
+#modal {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 1001;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#alert {
+  border: 1px solid;
+  border-radius: 1rem;
+  width: 80%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+#alert h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#alert button {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff1412;
+  color: #fff;
+  cursor: pointer;
+}
+
+.success {
+  color: #05ff30;
+}
+
+.danger {
+  color: #ff1412;
+}
+
+nav {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  padding: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  padding: 0.5rem 1rem;
+  color: #f4f4f4;
+}
+
+nav a:hover {
+  border: 0.01rem dotted;
+  color: #feafea;
+}
+
+main {
+  height: 84vh;
+  width: 80%;
+  padding: 1rem 0;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+main h1 {
+  line-height: 1.3;
+}
+
+main div {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+main div a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #116fff;
+  padding: 0.5rem;
+}
+
+main form {
+  position: relative;
+}
+
+main .form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+main input {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+}
+
+main button {
+  margin-top: 1rem;
+  padding: 0.3rem 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+}
+
+main .buttons {
+  display: flex;
+}
+
+main #first {
+  transition: opacity 250ms ease-in-out;
+}
+
+main #next {
+  opacity: 0;
+  display: none;
+  transition: opacity 250ms ease-in-out;
+}
+
+footer {
+  height: 8vh;
+  text-align: center;
+}
+
+@media (max-height: 640px) {
+  body {
+    height: auto;
+  }
+
+  main {
+    height: 100%;
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+    <title>Test</title>
+  </head>
+  <body>
+    <div id="modal">
+      <div id="alert">
+        <h3></h3>
+        <button>Close</button>
+      </div>
+    </div>
+
+    <div class="showcase">
+      <nav>
+        <a href="index.htm">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+      </nav>
+
+      <main>
+        <h1>Register</h1>
+        <form id="mainSignUpForm">
+          <div id="first">
+            <div class="form-group">
+              <label>Firstname: </label>
+              <input
+                type="text"
+                id="signUpFirstName"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Lastname: </label>
+              <input
+                type="text"
+                id="signUpLastName"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Email: </label>
+              <input
+                type="email"
+                id="signUpEmail"
+                autocomplete="off"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Date of birth: </label>
+              <input type="date" id="signUpDOB" required />
+            </div>
+            <div class="form-group">
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="signUpGenderMale"
+                  value="male"
+                  required
+                />
+                Male</label
+              >
+              <label>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="signUpGenderFemale"
+                  value="female"
+                  required
+                />
+                Female</label
+              >
+            </div>
+            <button id="nextBtn">Next</button>
+          </div>
+        </form>
+        <div id="next">
+          <div class="form-group">
+            <label>Choose Username: </label>
+            <input
+              type="text"
+              autocomplete="off"
+              id="signUpUsername"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Choose password: </label>
+            <input
+              type="password"
+              autocomplete="off"
+              id="signUpFirstPasscode"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Confirm password: </label>
+            <input
+              type="password"
+              autocomplete="off"
+              id="signUpSecondPasscode"
+              required
+            />
+          </div>
+          <div class="buttons">
+            <button id="back">Back</button>
+            <button id="signUpFormSubmit">Submit</button>
+          </div>
+        </div>
+        <div>
+          <p>
+            Already have an account?
+            <a href="signIn.htm" id="signIn">Sign in</a>
+          </p>
+        </div>
+      </main>
+
+      <footer>
+        <p>By Onyekwere Precious</p>
+        <p>Copyright &copy; 2020</p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
